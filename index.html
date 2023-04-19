@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 3, Rebound Exercise N°5: SafeMe</title>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- FONT AWESOME KIT -->
+    <script
+      src="https://kit.fontawesome.com/1872a23027.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Inscríbete</h1>
+
+      <form>
+        <div class="input-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+
+        <div class="input-group">
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" />
+        </div>
+
+        <div class="input-group">
+          <label for="trabajo">Trabajo</label>
+          <input type="text" name="trabajo" id="trabajo" />
+        </div>
+        <div class="input-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" />
+        </div>
+        <div class="input-group sobre-ti">
+          <label for="SobreTi">Sobre ti</label>
+          <input type="text" name="SobreTi" id="SobreTi" />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <section class="card" id="card">
+        <div class="card-left">
+          <img
+            src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+            alt=""
+          />
+
+          <h2 id="cardName"></h2>
+          <p id="cardJob"></p>
+        </div>
+        <div class="card-right">
+          <h3>Información</h3>
+          <div class="info-grid">
+            <div class="info-box">
+              <h4 id="cardEmail">Email</h4>
+              <p>correo@mail.com</p>
+            </div>
+
+            <div class="info-box">
+              <h4>Phone</h4>
+              <p id="cardPhone">123456789</p>
+            </div>
+          </div>
+
+          <h3>Sobre Mí</h3>
+          <p id="cardAbout"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
